@@ -1,0 +1,120 @@
+ .PostCard_Main_Div{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px 10px;
+    gap: 20px;
+    padding: 30px;
+}
+.PostCard_Main_Div .Left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.528);
+    width: 100%;
+}
+.PostCard_Main_Div .Left .Image{
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+.PostCard_Main_Div .Right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    max-width: 90%;
+    gap: 10px;
+}
+.PostCard_Main_Div .Right label{
+    font-family:"Rajdhani";
+    color: white;
+}
+.PostCard_Main_Div .Right .id{
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.623);
+}
+.PostCard_Main_Div .Right .Name{
+    font-size: 40px;
+    font-weight: 800;
+}
+.PostCard_Main_Div .Right .ShortInfo{
+    font-size: large;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.775);
+    padding-bottom: 5px;
+    color: rgba(240, 248, 255, 0.803);
+}
+.PostCard_Main_Div .Right .Button_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.PostCard_Main_Div .Right .Button_Div .Link{
+    transition: 0.2s;
+    font-family:"Rajdhani";
+    font-size: larger;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}
+.PostCard_Main_Div .Right .Button_Div .Link:hover{
+    transition: 0.2s;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.165);
+}
+.PostCard_Main_Div .Right .Tags_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.PostCard_Main_Div .Right .Tags_Div label{
+    transition: 0.2s;
+    font-family:"Rajdhani";
+    font-size: large;
+    color: white;
+}
+.PostCard_Main_Div .Right .Tags_Div label:hover{
+    transition: 0.2s;
+    opacity: 0.7;
+}
+@media (max-width: 701px){
+    .PostCard_Main_Div{
+        width: 100%;
+        flex-direction: column;
+    }
+    /* .PostCard_Main_Div .Left .Image{
+        width:70vw;
+        height: auto;
+    } */
+    .PostCard_Main_Div .Left{
+        /* border: 0; */
+        padding-right: 0;
+    }
+    .PostCard_Main_Div .Right .id{
+        font-size: medium;
+    }
+    .PostCard_Main_Div .Right .Name{
+        font-size: xx-large;
+    }
+    .PostCard_Main_Div .Right .ShortInfo{
+        font-size: medium;
+    }
+}

@@ -1,0 +1,60 @@
+.SkillsIntro_Main_Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    
+}
+.SkillsIntro_Main_Div .Title2{
+    transition: 0.7s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size:50px;
+    border-bottom:  2px solid #ffd942;
+    color: black;
+    -webkit-text-stroke: 1px #ffff42;
+    /* animation: TextOut 1s; */
+}
+.SkillsIntro_Main_Div .skills_title_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    column-gap: 3vh;
+    row-gap: 2vh;
+}
+.SkillsIntro_Main_Div .skills_title_content label{
+    font-size: larger;
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+}
+.SkillsIntro_Main_Div .skills_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 5vh;
+}
+.SkillsIntro_Main_Div .skills_content .img{
+    width: 10%;
+    height: 100%;
+}
+@media (max-width: 701px){
+    .SkillsIntro_Main_Div .Title2{
+        font-size: xx-large;
+    }
+    .SkillsIntro_Main_Div .skills_title_content{
+        width: 90%;
+    }
+    .SkillsIntro_Main_Div .skills_content{
+        width: 80%;
+    }
+    .SkillsIntro_Main_Div .skills_content .img{
+        width: 15%;
+        height: 100%
+    }
+}

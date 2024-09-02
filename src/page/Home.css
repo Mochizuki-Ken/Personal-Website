@@ -1,0 +1,245 @@
+@keyframes Move{
+    0%{margin-top:-100% ; bottom: 100%;}
+    100%{margin-top: 0; bottom: 40%;}
+}
+@keyframes Move2{
+    0%{margin-top:-100% ; bottom: 100%;}
+    100%{margin-top: 0; bottom: 42%;}
+}
+
+@keyframes MoveUp{
+    0%{margin-bottom:-100% ; bottom: 100%;}
+    100%{margin-bottom: 0; bottom: 40%;}
+}
+
+
+@keyframes Color{
+    0%{opacity: 0.5;}
+    50%{opacity: 1;}
+    100%{opacity: 0.5;}
+}
+
+/* .Home_Main{
+
+} */
+
+body{
+    background-color: black;
+}
+
+.Home_Main_Div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+.Home_Main_Div .First_Screen_Div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 100%;
+    height: 100vh;
+    gap: 5px;
+
+    animation: Move 1s;
+
+}
+
+.Home_Main_Div .First_Screen_Div label{
+    /* display: inline-block; */
+    text-align: center;
+    color: #FF6442;
+}
+.Home_Main_Div .First_Screen_Div .lt{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+}
+.Home_Main_Div .First_Screen_Div .ol{
+    color: black;
+    -webkit-text-stroke: 1px #FF6442;
+}
+.Home_Main_Div .l1{
+    font-size: 11vh;
+}
+.Home_Main_Div .l2{
+    font-size: 9vh;
+    margin-top: -20px;
+}
+.Home_Main_Div .l3{
+    font-size: 7vh;
+    margin-top: -18px;
+}
+.Home_Main_Div .l4{
+    font-size: 5vh;
+    margin-top: -15px;
+}
+.Home_Main_Div .l5{
+    font-size: xx-large;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    margin-top: 100px;
+}
+
+.Home_Main_Div .First_Screen_Div .arrow_div{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    animation: Move 1s;
+}
+
+.Home_Main_Div .First_Screen_Div .arrow{
+    transform: rotateZ(-90deg);
+    width: 10vw;
+    height: auto;
+    animation: Color 2s infinite;
+}
+
+.Home_Main_Div .First_Screen_Div .left_arrow{
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+}
+
+.Home_Main_Div .First_Screen_Div .right_arrow{
+    position: absolute;
+    bottom: 40%;
+    right: 15%;
+}
+
+.Home_Main_Div .Second_Screen_Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10%;
+
+    width: 100%;
+    height: 100vh;
+
+    animation: Move 1s;
+}
+
+.Home_Main_Div .Second_Screen_Div .Links_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+    gap: 10%;
+}
+
+@keyframes TextOut{
+    from{opacity: 0;padding-left: 10%; border-bottom: 0;}
+    to{opacity: 1;padding-left: 0%; border-bottom: 2px solid #FF6442;}
+}
+
+.Home_Main_Div .Second_Screen_Div .Links_Div .Link{
+    transition: 0.7s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 60px;
+    border-bottom:  2px solid #FF6442;
+    color: black;
+    -webkit-text-stroke: 1px #FF6442;
+    animation: TextOut 1s;
+}
+
+.Home_Main_Div .Second_Screen_Div .Links_Div .Link:hover{
+    transition: 0.7s;
+    color: #FF6442;
+    border-bottom:  2px solid #ff654296;
+}
+
+.Home_Main_Div .Second_Screen_Div .Social_Media_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 4%;
+    width: 100%;
+    height: 10%;
+}
+
+.Home_Main_Div .Second_Screen_Div .Social_Media_Div .icon{
+    transition: 0.4s;
+    color: white;
+    font-size: 40px;
+}
+
+.Home_Main_Div .Second_Screen_Div .Social_Media_Div .icon:hover{
+    transition: 0.4s;
+    padding-bottom: 5px;
+    /* transform: rotateY(180deg); */
+    color: #FF6442;
+}
+
+@media (max-width: 901px){
+    .Home_Main_Div .l1{
+        font-size: 11vw;
+    }
+    .Home_Main_Div .l2{
+        font-size: 9vw;
+        margin-top: -10px;
+    }
+    .Home_Main_Div .l3{
+        font-size: 7vw;
+        margin-top: -8px;
+    }
+    .Home_Main_Div .l4{
+        font-size: 5vw;
+        margin-top: -5px;
+    }
+    .Home_Main_Div .l5{
+        font-size: large;
+        margin-top: 30px;
+    }
+    .Home_Main_Div .First_Screen_Div .arrow_div{
+        animation: Move2 1s;
+    }
+    .Home_Main_Div .First_Screen_Div .arrow{
+        width: 15vw;
+    }
+    .Home_Main_Div .First_Screen_Div .left_arrow{
+        bottom: 42%;
+        left: 4%;
+    }
+    
+    .Home_Main_Div .First_Screen_Div .right_arrow{
+        bottom: 42%;
+        right: 4%;
+    }
+    .Home_Main_Div .Second_Screen_Div .Links_Div .Link{
+        font-size: xx-large;
+        /* width: 50%; */
+    }
+    .Home_Main_Div .Second_Screen_Div .Links_Div{
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 8%;
+    }
+}
+
+@media (max-width: 901px){
+    .Home_Main_Div .First_Screen_Div .arrow{
+        width: 13vw;
+    }
+}
+
+@media (max-width: 701px){
+    .Home_Main_Div .First_Screen_Div .arrow{
+        width: 15vw;
+    }
+}

@@ -1,0 +1,119 @@
+.ProjectCard_Main_Div{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px 10px;
+    gap: 20px;
+}
+.ProjectCard_Main_Div .Left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    padding-right:  20px;
+    width: 100%;
+}
+.ProjectCard_Main_Div .Left .Image{
+    width:30vh;
+    height: auto;
+    border-radius: 10px;
+}
+.ProjectCard_Main_Div .Right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 10px;
+}
+
+.ProjectCard_Main_Div .Right label{
+    font-family:"Rajdhani";
+    color: white;
+}
+.ProjectCard_Main_Div .Right .id{
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.623);
+}
+.ProjectCard_Main_Div .Right .Name{
+    font-size: 35px;
+    font-weight: 800;
+}
+.ProjectCard_Main_Div .Right .ShortInfo{
+    font-size: medium;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    color: rgba(240, 248, 255, 0.719);
+}
+
+.ProjectCard_Main_Div .Right .Button_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.ProjectCard_Main_Div .Right .Button_Div .Link{
+    transition: 0.2s;
+    font-family:"Rajdhani";
+    font-size: larger;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.411);
+}
+.ProjectCard_Main_Div .Right .Button_Div .Link:hover{
+    transition: 0.2s;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.165);
+}
+.ProjectCard_Main_Div .Right .Tags_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.ProjectCard_Main_Div .Right .Tags_Div label{
+    transition: 0.2s;
+    font-family:"Rajdhani";
+    font-size: large;
+    color: white;
+}
+
+.ProjectCard_Main_Div .Right .Tags_Div label:hover{
+    transition: 0.2s;
+    opacity: 0.7;
+}
+
+@media (max-width: 701px){
+    .ProjectCard_Main_Div {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .ProjectCard_Main_Div{
+        width: 100%;
+        flex-direction: column;
+    }
+    .ProjectCard_Main_Div .Left{
+        border: 0;
+        padding-right: 0;
+    }
+    .ProjectCard_Main_Div .Right{
+        width: 100%;
+    }
+}

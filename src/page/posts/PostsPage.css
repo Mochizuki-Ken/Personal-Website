@@ -1,0 +1,191 @@
+@keyframes Move{
+    0%{margin-top:-100% ; bottom: 100%;}
+    100%{margin-top: 0; bottom: 40%;}
+}
+.Posts_Main_Div{
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    animation:  Move 0.7s;
+}
+.Posts_Main_Div .Top_Div{
+    width: 25%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    gap: 15px;
+}
+
+.Posts_Main_Div .Top_Div .Title_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Posts_Main_Div .Top_Div .Title_Div .Title{
+    transition: 0.7s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 50px;
+    border-bottom:  2px solid #FF6442;
+    color: black;
+    -webkit-text-stroke: 1px #FF6442;
+}
+
+.Posts_Main_Div .Top_Div .Title_Div .icon{
+    transition: 0.2s;
+    font-size: xx-large;
+    color: #FF6442;
+    position: absolute;
+    animation:  Move 0.8s;
+    top: 5%;
+    left: 38%;
+}
+
+.Posts_Main_Div .Top_Div .Title_Div .icon:hover{
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Search_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Search_Div input{
+    width: 90%;
+    border-radius: 10px;
+    border:0;
+    font-size: x-large;
+    padding: 5px 15px ;
+    border: 1px solid #FF6442;
+    font-family:"Rajdhani";
+    font-weight: 200;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Search_Div .icon{
+    transition: 0.2s;
+    font-size: xx-large;
+    color: white;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Search_Div .icon:hover{
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Filter_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Filter_Div label{
+    font-size: larger;
+    color: white;
+    font-family:"Rajdhani";
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Filter_Div label:hover{
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Filter_Div .icon{
+    transition: 0.2s;
+    font-size: x-large;
+    color: white;
+}
+
+.Posts_Main_Div .Top_Div .Search_Filter_Div .Filter_Div .icon:hover{
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+.Posts_Main_Div .Post_Cards_Div{
+    width: 50%;
+    height: 80vh;
+    max-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* background-color: antiquewhite; */
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    gap: 20px;
+}
+
+@media (max-width: 901px){
+    .Posts_Main_Div .Top_Div .Title_Div .Title{
+        font-size: 40px;
+    }
+    .Posts_Main_Div .Top_Div{
+        width: 80%;
+    }
+    .Posts_Main_Div .Top_Div .Search_Filter_Div .Search_Div input{
+        font-size: large;
+    }
+    .Posts_Main_Div .Top_Div .Title_Div .icon{
+        top: 3%;
+        left: 10%;
+    }
+    .Posts_Main_Div .Post_Cards_Div{
+        width: 90%;
+        max-height: 80vh;
+        padding-bottom: 100px;
+
+        
+        /* height: auto; */
+    }
+}
+
+@media (max-width: 901px){
+    .Posts_Main_Div .Top_Div .Title_Div .icon{
+        top: 5%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 701px){
+    .Posts_Main_Div .Top_Div .Title_Div .icon{
+        top: 5%;
+        left: 10%;
+    }
+}

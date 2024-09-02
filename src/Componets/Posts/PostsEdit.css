@@ -1,0 +1,256 @@
+@keyframes Move{
+    0%{margin-top:-100% ; bottom: 100%;}
+    100%{margin-top: 0; bottom: 40%;}
+}
+.PostsEdit_Main_Div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    animation:  Move 0.7s;
+}
+
+.PostsEdit_Main_Div .Top_Div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-top: 20px;
+    gap: 20px;
+
+}
+
+.PostsEdit_Main_Div .Top_Div .Title_Div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+}
+
+.PostsEdit_Main_Div .Top_Div .Title_Div label{
+    transition: 0.7s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 50px;
+    border-bottom:  2px solid #FF6442;
+    color: black;
+    -webkit-text-stroke: 1px #FF6442;
+}
+
+.PostsEdit_Main_Div .Top_Div .Title_Div .icon{
+    transition: 0.2s;
+    font-size: xx-large;
+    color: #FF6442;
+}
+
+.PostsEdit_Main_Div .Top_Div .Edit_Tools_Div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    width: 50%;
+
+    gap: 10px;
+
+}
+
+.PostsEdit_Main_Div .Top_Div .Edit_Tools_Div .icon{
+    transition: 0.2s;
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+.PostsEdit_Main_Div .Content_Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    gap: 20px;
+
+    border-radius: 10px;
+
+    border: 1px solid white;
+
+    width: 50%;
+    padding: 20px;
+}
+
+.PostsEdit_Main_Div .Content_Div .First_Image_Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    border: 1px solid white;
+
+    gap: 10px;
+
+    width: 80%;
+    height: 300px;
+}
+
+.PostsEdit_Main_Div .Content_Div .First_Image_Div label{
+    transition: 0.7s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: xx-large;
+    -webkit-text-stroke: 1px #FF6442;
+    color: black;
+}
+.PostsEdit_Main_Div .Content_Div .First_Image_Div label:hover{
+    transition: 0.5;
+    color: #FF6442;
+}
+.PostsEdit_Main_Div .Content_Div .First_Image_Div .image{
+    height: 80%;
+    width: auto;
+    border-radius: 10px;
+}
+.PostsEdit_Main_Div .Content_Div .First_Image_Div .icon{
+    font-size: x-large;
+    color: white;
+}
+.PostsEdit_Main_Div .Content_Div .Others_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+.PostsEdit_Main_Div .Content_Div input{
+    width: 80%;
+    font-family:"Rajdhani";
+    font-size: xx-large;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 10px;
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
+
+.PostsEdit_Main_Div .Content_Div .Others_Div input{
+    width: 60%;
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
+.PostsEdit_Main_Div .Content_Div .Others_Div .Select{
+    width: 40%;
+    color: black;
+    font-family:"Rajdhani";
+    font-weight: 600;
+    background-color: rgb(23, 23, 23);
+}
+.PostsEdit_Main_Div .Content_Div textarea{
+    width: 80%;
+    min-height: 100px;
+    font-family:"Rajdhani";
+    font-size: x-large;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 10px;
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
+
+.PostsEdit_Main_Div .Content_Div .Button_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.PostsEdit_Main_Div .Content_Div .Button_Div button{
+    transition: 0.2s;
+    border: 1px solid white;
+    border-radius: 0;
+    background-color: black;
+    padding: 10px;
+    font-family:"Rajdhani";
+    font-size: xx-large;
+    font-weight: 600;
+    color: #ffffff;
+}
+.PostsEdit_Main_Div .Content_Div .Button_Div button:hover{
+    transition: 0.2s;
+    border-radius: 10px;
+    background-color: rgba(250, 235, 215, 0.136);
+}
+
+
+
+.Quill p{
+    font-family:"Rajdhani";
+    font-size: xx-large;
+    color: white;
+}
+.Quill h1{
+    font-family:"Rajdhani";
+    font-size: xx-large;
+    color: white;
+}
+.Quill label{
+    font-family:"Rajdhani";
+    font-size: xx-large;
+    color: white;
+}
+
+@media (max-width: 701px){
+    .PostsEdit_Main_Div .Top_Div{
+        width: 80%;
+    }
+    .PostsEdit_Main_Div .Top_Div .Title_Div label{
+        font-size: xx-large;
+    }
+    .PostsEdit_Main_Div .Content_Div{
+        width: 100%;
+    }
+    .PostsEdit_Main_Div .Content_Div .First_Image_Div{
+        width: 90%;
+        height: 200px;
+    }
+    .PostsEdit_Main_Div .Content_Div .Others_Div {
+        width: 90%;
+    }
+    .PostsEdit_Main_Div .Content_Div input{
+        font-size: x-large;
+        width: 90%;
+    }
+    .PostsEdit_Main_Div .Content_Div textarea{
+        font-size: x-large;
+        width: 90%;
+    }
+    .Quill p{
+        font-size: x-large;
+    }
+    .Quill h1{
+        font-size: x-large;
+    }
+    .Quill label{
+        font-size: x-large;
+    }
+    .PostsEdit_Main_Div .Content_Div .Button_Div button{
+        font-size: x-large;
+    }
+}

@@ -1,0 +1,76 @@
+@keyframes Out{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes SlideSmooth{
+    from{margin-right: 50vw;}
+    to{margin-right: 0;}
+}
+.Experience_Main_Div{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 20px;
+
+    gap: 20px;
+    animation: Out 0.3s;
+}
+
+.Experience_Main_Div .Top_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.Experience_Main_Div .Top_Div .Title{
+    transition: 0.7s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 50px;
+    border-bottom:  2px solid #FF6442;
+    color: black;
+    -webkit-text-stroke: 1px #FF6442;
+}
+
+.Experience_Main_Div .Top_Div .icon{
+    transition: 0.2s;
+    font-size: xx-large;
+    color: #FF6442;
+    animation:  Move 0.8s;
+}
+
+.Experience_Main_Div .Top_Div .icon:hover{
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+.Experience_Main_Div .Content_Div{
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* background-color: antiquewhite; */
+
+    /* gap: 15px; */
+}
+@media (max-width: 901px){
+    .Experience_Main_Div .Content_Div{
+        width: 95%;
+    }
+    .Experience_Main_Div .Top_Div .Title{
+        font-size: xx-large;
+    }
+}

@@ -1,0 +1,166 @@
+@keyframes Move{
+    0%{margin-top:-100% ; bottom: 100%;}
+    100%{margin-top: 0; bottom: 40%;}
+}
+.Post_Detail_Main_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 20px;
+
+    gap: 20px;
+    animation:  Move 0.7s;
+
+    padding-bottom: 30px;
+}
+
+.Post_Detail_Main_Div  .Title_Div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    gap: 20px;
+
+}
+
+.Post_Detail_Main_Div  .Title_Div label{
+    transition: 0.7s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 50px;
+    border-bottom:  2px solid #FF6442;
+    color: black;
+    -webkit-text-stroke: 1px #FF6442;
+}
+
+.Post_Detail_Main_Div  .Title_Div .icon{
+    transition: 0.2s;
+    font-size: xx-large;
+    color: #FF6442;
+}
+
+.Post_Detail_Main_Div .Display_Div{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    /* border: 1px solid white; */
+}
+.Post_Detail_Main_Div .Display_Div .image{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.Post_Detail_Main_Div .Display_Div .Title{
+    font-family:"Rajdhani";
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.Post_Detail_Main_Div .Display_Div .Link{
+    transition: 0.2s;
+    font-family:"Rajdhani";
+    font-size: x-large;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}
+.Post_Detail_Main_Div .Display_Div .Link:hover{
+    transition: 0.2s;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.165);
+}
+.Post_Detail_Main_Div .Display_Div .Other_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Post_Detail_Main_Div .Display_Div .Other_Div .Type{
+    font-family:"Rajdhani";
+    font-size: x-large;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.Post_Detail_Main_Div .Display_Div .Other_Div .Tags{
+    font-family:"Rajdhani";
+    font-size: x-large;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.Post_Detail_Main_Div .Display_Div .Date{
+    font-family:"Rajdhani";
+    font-size: x-large;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.468);
+}
+
+.Post_Detail_Main_Div .Display_Div hr{
+    width: 100%;
+}
+
+.Post_Detail_Main_Div .Display_Div .Content p{
+    font-family:"Rajdhani";
+    font-size: xx-large;
+    color: white;
+}
+.Post_Detail_Main_Div .Display_Div .Content h1{
+    font-family:"Rajdhani";
+    font-size: xx-large;
+    color: white;
+}
+.Post_Detail_Main_Div .Display_Div .Content label{
+    font-family:"Rajdhani";
+    font-size: xx-large;
+    color: white;
+}
+
+@media (max-width: 701px){
+    .Post_Detail_Main_Div .Display_Div{
+        width: 90%;
+    }
+    .Post_Detail_Main_Div .Display_Div .Title{
+        font-size: xx-large;
+    }
+    .Post_Detail_Main_Div .Display_Div .Other_Div .Type{
+        font-size: large;
+    }
+    
+    .Post_Detail_Main_Div .Display_Div .Other_Div .Tags{
+        font-size: large;
+    }
+    
+    .Post_Detail_Main_Div .Display_Div .Date{
+        font-size: large;
+    }
+    
+    .Post_Detail_Main_Div .Display_Div .Content p{
+        font-size: x-large;
+    }
+    .Post_Detail_Main_Div .Display_Div .Content h1{
+        font-size: x-large;
+    }
+    .Post_Detail_Main_Div .Display_Div .Content label{
+        font-size: x-large;
+    }
+}
