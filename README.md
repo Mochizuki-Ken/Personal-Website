@@ -1,2 +1,2 @@
 Mochizuki Ken - Personal Website
-- mochizuki-ken.info
+- mochizuki-ken.web.app
